@@ -2,6 +2,7 @@ let inputData = document.getElementById("textDisplay");
 
 //Emptying The Screen
 function clearAllData() {
+  inputData.classList.remove("error-msg");
   inputData.value = "";
 }
 
