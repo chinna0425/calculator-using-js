@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <form class="inner-container">
+        <input type="text" placeholder="0" id="textDisplay" readonly />
+        <div class="each-set-container">
+          <button
+            type="button"
+            onclick="clearAllData()"
+            class="each-button-style additional-style"
+          >
+            AC
+          </button>
+          <button
+            type="button"
+            onclick="removeOneByOne()"
+            class="each-button-style additional-style"
+          >
+            DE
+          </button>
+          <button
+            type="button"
+            onclick="performOperation('%')"
+            class="each-button-style additional-style"
+          >
+            %
+          </button>
+          <button
+            type="button"
+            onclick="performOperation('/')"
+            class="each-button-style additional-style"
+          >
+            /
+          </button>
+        </div>
+        <div class="each-set-container">
+          <button
+            type="button"
+            onclick="performOperation('7')"
+            class="each-button-style"
+          >
+            7
+          </button>
+          <button
+            type="button"
+            onclick="performOperation('8')"
+            class="each-button-style"
+          >
+            8
+          </button>
+          <button
+            type="button"
+            onclick="performOperation('9')"
+            class="each-button-style"
+          >
+            9
+          </button>
+          <button
+            type="button"
+            onclick="performOperation('*')"
+            class="each-button-style external-star-style"
+          >
+            *
+          </button>
+        </div>
+        <div class="each-set-container">
+          <button
+            type="button"
+            onclick="performOperation('4')"
+            class="each-button-style"
+          >
+            4
+          </button>
+          <button
+            type="button"
+            onclick="performOperation('5')"
+            class="each-button-style"
+          >
+            5
+          </button>
+          <button
+            type="button"
+            onclick="performOperation('6')"
+            class="each-button-style"
+          >
+            6
+          </button>
+          <button
+            type="button"
+            onclick="performOperation('-')"
+            class="each-button-style additional-style"
+          >
+            -
+          </button>
+        </div>
+        <div class="each-set-container">
+          <button
+            type="button"
+            onclick="performOperation('1')"
+            class="each-button-style"
+          >
+            1
+          </button>
+          <button
+            type="button"
+            onclick="performOperation('2')"
+            class="each-button-style"
+          >
+            2
+          </button>
+          <button
+            type="button"
+            onclick="performOperation('3')"
+            class="each-button-style"
+          >
+            3
+          </button>
+          <button
+            type="button"
+            onclick="performOperation('+')"
+            class="each-button-style additional-style"
+          >
+            +
+          </button>
+        </div>
+        <div class="each-set-container">
+          <button
+            type="button"
+            onclick="performOperation('00')"
+            class="each-button-style"
+          >
+            00
+          </button>
+          <button
+            type="button"
+            onclick="performOperation('0')"
+            class="each-button-style"
+          >
+            0
+          </button>
+          <button
+            type="button"
+            onclick="performOperation('.')"
+            class="each-button-style external-dot-style"
+          >
+            .
+          </button>
+          <button
+            type="button"
+            onclick="resultCheck()"
+            class="each-button-style equal-style"
+          >
+            =
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.main-container {
+  /* background-color: #ffcccc; */
+  background-image: linear-gradient(158deg, #b3ffb3, #ffff80, #ffa31a);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inner-container {
+  height: 550px;
+  width: 420px;
+  background-color: rgb(24, 23, 23);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 0px 1px 14px 0px #ffffff;
+}
+@media screen and (max-width: 440px) {
+  .inner-container {
+    width: 85%;
+    height: 75%;
+  }
+}
+input {
+  height: 50px;
+  border-radius: 5px;
+  border: 0px;
+  box-shadow: 0px 0px 10px 0px #ffffff;
+  background-color: black;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 600;
+  text-align: right;
+  padding-right: 10px;
+}
+::placeholder {
+  color: #ffffff;
+}
+.each-set-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.each-button-style {
+  height: 62px;
+  width: 62px;
+  padding: 4px;
+  border-radius: 50%;
+  border-width: 0px;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  box-shadow: 0px 0px 14px 0px #ffffff;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+.additional-style {
+  color: #00ff00;
+}
+.external-dot-style {
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+.external-star-style {
+  padding-top: 10px;
+  color: #00ff00;
+}
+.equal-style {
+  color: #ff751a;
+  border-radius: 10px;
+}
+.each-button-style:hover {
+  box-shadow: 0px 0px 14px 0px #56ef91;
+}
+.error-msg {
+  color: #ff0000;
+}
